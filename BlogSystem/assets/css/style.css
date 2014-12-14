@@ -1,0 +1,213 @@
+h1{
+	font: 14px 'Open Sans Condensed', sans-serif;
+	text-transform:uppercase;
+	margin-bottom: 24px;
+}
+
+h2{
+	font: 48px 'Open Sans Condensed', sans-serif;
+}
+
+h1 a, h2 a{
+	color:#4f4f4f !important;
+	text-decoration: none !important;
+}
+#content{
+    position: absolute;
+    font: 16px/1.5 'PT Serif', Times, Cambria, serif;
+    width: 580px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#content p,
+#content ul{
+    margin-bottom:25px;
+}
+
+#content ul{
+    padding-left:20px;
+}
+
+#content li{
+    margin-bottom:5px;
+}
+
+/* The actual post styles */
+
+.post{
+    padding: 50px 0 15px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.post .date{
+    font: bold 12px 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #a7a7a7;
+    margin: 24px 0 30px 20px;
+    position: relative;
+}
+
+/* The calendar icon is set as a data url */
+
+.post .date:before{
+    width:18px;
+    height:18px;
+    position:absolute;
+    content:'';
+    left: -22px;
+    top: -1px;
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..')
+}
+aside{
+    position: fixed;
+    width: 250px;
+    height: auto;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -460px;
+    padding-top: 65px;
+}
+
+aside p.description{
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color:#787878;
+}
+
+/* The main navigation links */
+aside ul{
+    font: bold 18px 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    list-style:none;
+}
+
+aside ul li a{
+    text-decoration:none !important;
+    display:inline-block;
+    padding:0 3px;
+    margin:2px 0 2px 10px;
+}
+
+aside ul li a:hover{
+    background-color:#389dc1;
+    color:#fff;
+}
+
+aside p.author{
+    position: absolute;
+    bottom: 20px;
+    height: 30px;
+    font-size: 12px;
+    color: #888;
+}
+.pagination-arrow{
+    display: inline-block;
+    font: bold 16px/1 'Open Sans Condensed', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 20px 15px;
+    color: #555 !important;
+    padding: 8px 12px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.pagination-arrow.newer{
+    padding-left: 20px;
+}
+
+.pagination-arrow.older{
+    padding-right: 20px;
+    float:right;
+}
+
+.pagination-arrow.newer:before,
+.pagination-arrow.older:before{
+    content: '';
+    border: 5px solid #555;
+    border-color: transparent #555 transparent transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 3px;
+    top: 12px;
+}
+
+.pagination-arrow.older:before{
+    left:auto;
+    right:3px;
+    border-color: transparent transparent transparent #555;
+}
+.message{
+    padding-top:50px;
+}
+
+.message h1{
+    font-size:36px;
+    margin-bottom: 18px;
+}
+
+.message p{
+    font-size:13px;
+}
+
+.center{
+    text-align:center;
+}
+@media all and (max-width: 1024px) {
+    aside{
+        left: 5%;
+        margin-left: 0;
+        width: 25%;
+    }
+
+    #content{
+        left: 35%;
+        margin-left: 0;
+        width: 60%;
+    }
+}
+
+/* Smartphones */
+
+@media all and (max-width: 840px) {
+
+    h2{
+        font-size:36px;
+    }
+
+    aside{
+        margin-left: 0;
+        position: static;
+        width: 90%;
+        padding: 5% 5% 0 5%;
+        text-align: center;
+    }
+
+    aside .description{
+        margin-bottom: 25px;
+    }
+
+    aside li {
+        display: inline-block;
+    }
+
+    aside ul{
+        text-align: center;
+    }
+
+    aside .author{
+        display: none;
+    }
+
+    #content{
+        position: static;
+        padding: 5%;
+        padding-top: 0;
+        width: 90%;
+    }
+}
