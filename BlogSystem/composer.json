@@ -1,0 +1,6 @@
+{
+    "require": {
+    "michelf/php-markdown": "1.4.1",
+    "suin/php-rss-writer": "dev-master"
+    }
+}
